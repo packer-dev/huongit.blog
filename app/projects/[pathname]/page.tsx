@@ -1,8 +1,13 @@
-import Container from "@/container";
 import React from "react";
+import DetailProjectModule from "@/modules/DetailProject";
+import Main from "@/main";
 
 const DetailProject = () => {
-  return <Container>DetailProject</Container>;
+  return (
+    <Main>
+      <DetailProjectModule />
+    </Main>
+  );
 };
 
 export default DetailProject;

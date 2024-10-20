@@ -37,6 +37,8 @@ const Container = ({ children }: { children: ReactNode }) => {
         }
         dispatch({ key: "loading", value: false });
       }, 500);
+    } else {
+      dispatch({ key: "loading", value: false });
     }
     return () => {
       clearTimeout(timeOut);
@@ -47,25 +49,23 @@ const Container = ({ children }: { children: ReactNode }) => {
     <div className="w-full">
       <Header />
       {/* {index !== -1 ? ( */}
-      <>
-        {loading && (
-          <div
-            className="w-full items-center justify-center flex fixed"
-            style={{ height: "calc(100vh)", top: 88 }}
-          >
-            <i className="bx bx-loader-alt text-7xl circle__loading text-blue-600"></i>
-          </div>
-        )}
+      {loading && (
         <div
-          className={`w-full ${loading ? "invisible" : ""}`}
-          style={{
-            paddingTop: "88px",
-            ...(index === -1 ? { height: "calc(100vh - 88px)" } : {}),
-          }}
+          className="w-full items-center justify-center flex fixed"
+          style={{ height: "calc(100vh)", top: 88 }}
         >
-          {children}
+          <i className="bx bx-loader-alt text-7xl circle__loading text-blue-600"></i>
         </div>
-      </>
+      )}
+      <div
+        className={`w-full ${loading ? "invisible" : ""}`}
+        style={{
+          paddingTop: "88px",
+          ...(index === -1 ? { height: "calc(100vh - 88px)" } : {}),
+        }}
+      >
+        {children}
+      </div>
       {/* ) : (
         <NotFound />
       )} */}

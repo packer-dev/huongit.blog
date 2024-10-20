@@ -7,7 +7,7 @@ import {
 import Link from "next/link";
 import ImageCustom from "../Image";
 
-const ItemProject = () => {
+const ItemProject = ({ item }: { item: any }) => {
   return (
     <div className="relative pb-2 border border-gray-300 shadow-md">
       <div className="relative">
@@ -31,39 +31,39 @@ const ItemProject = () => {
           className="font-semibold text-gray-600 pt-1 block mt-1 cursor-pointer hover:text-blue-500 
       whitespace-nowrap text-ellipsis w-full overflow-hidden"
         >
-          Avada | Website builder for wordpress & ecommerce
+          {item.name}
         </Link>
 
         <p className="text-xs text-gray-500 font-semibold">
           <i className="text-xs">by</i> Packer Tra
         </p>
-        <div className="flex-wrap gap-2 items-center my-2 hidden">
+        <div className="flex-wrap gap-2 items-center my-2 flex">
           <span className="text-sm font-bold text-gray-600">Technologies:</span>
-          <span className="bg-blue-800 text-white text-xs font-semibold px-1 py-1 rounded-sm">
+          <span className="bg-blue-800 text-white text-xs font-semibold px-1 py-1 rounded-sm cursor-pointer">
             React
           </span>
-          <span className="bg-orange-500 text-white text-xs font-semibold px-1 py-1 rounded-sm">
+          <span className="bg-orange-500 text-white text-xs font-semibold px-1 py-1 rounded-sm cursor-pointer">
             HTML
           </span>
-          <span className="bg-blue-500 text-white text-xs font-semibold px-1 py-1 rounded-sm">
+          <span className="bg-blue-500 text-white text-xs font-semibold px-1 py-1 rounded-sm cursor-pointer">
             CSS
           </span>
-          <span className="bg-yellow-500 text-white text-xs font-semibold px-1 py-1 rounded-sm">
+          <span className="bg-yellow-500 text-white text-xs font-semibold px-1 py-1 rounded-sm cursor-pointer">
             JS
           </span>
-          <span className="bg-green-500 text-white text-xs font-semibold px-1 py-1 rounded-sm">
+          <span className="bg-green-500 text-white text-xs font-semibold px-1 py-1 rounded-sm cursor-pointer">
             Spring boot
           </span>
-          <span className="bg-gray-500 text-white text-xs font-semibold px-1 py-1 rounded-sm">
+          <span className="bg-gray-500 text-white text-xs font-semibold px-1 py-1 rounded-sm cursor-pointer">
             Java
           </span>
-          <span className="bg-red-500 text-white text-xs font-semibold px-1 py-1 rounded-sm">
+          <span className="bg-red-500 text-white text-xs font-semibold px-1 py-1 rounded-sm cursor-pointer">
             Socket IO
           </span>
-          <span className="bg-amber-500 text-white text-xs font-semibold px-1 py-1 rounded-sm">
+          <span className="bg-amber-500 text-white text-xs font-semibold px-1 py-1 rounded-sm cursor-pointer">
             Web RTC
           </span>
-          <span className="bg-blue-900 text-white text-xs font-semibold px-1 py-1 rounded-sm">
+          <span className="bg-blue-900 text-white text-xs font-semibold px-1 py-1 rounded-sm cursor-pointer">
             TS
           </span>
         </div>
