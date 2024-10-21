@@ -9,7 +9,12 @@ import Footer from "./modules/Footer";
 import PreviewImageVideo from "./modules/PreviewImageVideo";
 import { usePathname } from "next/navigation";
 
-const Container = ({ children }: { children: ReactNode }) => {
+export type ContainerProps = {
+  children: ReactNode;
+  landingPage?: boolean;
+};
+
+const Container = ({ children, landingPage = true }: ContainerProps) => {
   const {
     state: { loading, preview },
     dispatch,
@@ -57,15 +62,19 @@ const Container = ({ children }: { children: ReactNode }) => {
           <i className="bx bx-loader-alt text-7xl circle__loading text-blue-600"></i>
         </div>
       )}
-      <div
-        className={`w-full ${loading ? "invisible" : ""}`}
-        style={{
-          paddingTop: "88px",
-          ...(index === -1 ? { height: "calc(100vh - 88px)" } : {}),
-        }}
-      >
-        {children}
-      </div>
+      {landingPage ? (
+        <div
+          className={`w-full ${loading ? "invisible" : ""}`}
+          style={{
+            paddingTop: "88px",
+            ...(index === -1 ? { height: "calc(100vh - 88px)" } : {}),
+          }}
+        >
+          {children}
+        </div>
+      ) : (
+        children
+      )}
       {/* ) : (
         <NotFound />
       )} */}

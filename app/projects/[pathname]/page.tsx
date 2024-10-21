@@ -4,7 +4,7 @@ import Main from "@/main";
 
 const DetailProject = () => {
   return (
-    <Main>
+    <Main landingPage={false}>
       <DetailProjectModule />
     </Main>
   );

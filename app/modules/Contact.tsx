@@ -3,16 +3,16 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div id="contact" className="w-full bg-gray-100">
+    <div id="contact" className="w-full bg-gray-100 pb-24">
       <div className="w-full box-content px-2 lg:w-2/3 mx-auto pt-16">
         <Title title="Contact me" />
       </div>
-
       <div className="w-full px-3 ml-1.5 mt-16 md:mx-auto lg:w-2/3 xl:w-5/12 py-10 lg:p-10 bg-white box-border">
         <div className="w-full flex">
           <div className="w-1/2 mr-10">
             <label className="font-semibold">
-              First Name
+              {""}
+              <span>First Name</span>
               <span className="text-blue-600 ml-1 text-xm font-bold">*</span>
             </label>
             <input
@@ -22,7 +22,8 @@ const Contact = () => {
           </div>
           <div className="w-1/2">
             <label className="font-semibold">
-              Last Name
+              {""}
+              <span>Last Name</span>
               <span className="text-blue-600 ml-1 text-xm font-bold">*</span>
             </label>
             <input
@@ -33,7 +34,8 @@ const Contact = () => {
         </div>
         <div className="w-full mt-6">
           <label className="font-semibold">
-            Email
+            {""}
+            <span>Email</span>
             <span className="text-blue-600 ml-1 text-xm font-bold">*</span>
           </label>
           <input
@@ -43,7 +45,8 @@ const Contact = () => {
         </div>
         <div className="w-full mt-6">
           <label className="font-semibold">
-            Subject
+            {""}
+            <span>Subject</span>
             <span className="text-blue-600 ml-1 text-xm font-bold">*</span>
           </label>
           <input
@@ -53,7 +56,8 @@ const Contact = () => {
         </div>
         <div className="w-full mt-6">
           <label className="font-semibold">
-            Message
+            {""}
+            <span>Message</span>
             <span className="text-blue-600 ml-1 text-xm font-bold">*</span>
           </label>
           <textarea className="resize-none h-32 w-full p-2 border-b-3 border-gray-400 focus:border-blue-600 caret-blue-600" />

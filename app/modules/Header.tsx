@@ -3,11 +3,12 @@ import { PAGE_ABOUT_ME } from "../constants";
 import avatar from "@/assets/images/avatar.jpg";
 import Link from "next/link";
 import routes from "../routes";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import ImageCustom from "@/components/Image";
 
 const Header = () => {
   const pathname = usePathname();
+  const router = useRouter();
   const newAvatar = "https://picsum.photos/536/354";
   return (
     <div
@@ -17,7 +18,7 @@ const Header = () => {
       <div className="wrapper flex justify-between box-border">
         <div
           aria-hidden
-          onClick={() => PAGE_ABOUT_ME}
+          onClick={() => router.push(PAGE_ABOUT_ME)}
           className="flex cursor-pointer"
         >
           <ImageCustom

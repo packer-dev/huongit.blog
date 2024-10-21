@@ -1,9 +1,14 @@
+"use client";
+
 import Title from "@/components/Title";
-import React from "react";
-import projects from "../../data/projects";
+import React, { useContext } from "react";
 import ItemProject from "@/components/ItemProject";
+import { AppContext } from "@/contexts/AppContext";
 
 const Projects = () => {
+  const {
+    state: { projects },
+  } = useContext(AppContext);
   return (
     <div id="projects" className="w-full bg-gray-100 pb-16">
       <div className="w-full box-content px-2 lg:w-2/3 mx-auto pt-16">

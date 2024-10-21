@@ -9,7 +9,10 @@ import ImageCustom from "../Image";
 
 const ItemProject = ({ item }: { item: any }) => {
   return (
-    <div className="relative pb-2 border border-gray-300 shadow-md">
+    <Link
+      href={`/projects/${item.id}`}
+      className="relative pb-2 border border-gray-300 shadow-md"
+    >
       <div className="relative">
         <ImageCustom
           autoSizePercent={60}
@@ -17,7 +20,7 @@ const ItemProject = ({ item }: { item: any }) => {
         />
         <div
           className="px-1.5 py-1 rounded-sm bg-green-500 w-auto my-2 inline-block justify-center 
-  text-white absolute top-1 left-3"
+        text-white absolute top-1 left-3"
         >
           <span className="bx bx-timer mr-1"></span>
           <span className="text-sm relative -top-0.5 font-semibold">
@@ -26,13 +29,12 @@ const ItemProject = ({ item }: { item: any }) => {
         </div>
       </div>
       <div className="px-3">
-        <Link
-          href=""
+        <p
           className="font-semibold text-gray-600 pt-1 block mt-1 cursor-pointer hover:text-blue-500 
       whitespace-nowrap text-ellipsis w-full overflow-hidden"
         >
           {item.name}
-        </Link>
+        </p>
 
         <p className="text-xs text-gray-500 font-semibold">
           <i className="text-xs">by</i> Packer Tra
@@ -80,11 +82,11 @@ const ItemProject = ({ item }: { item: any }) => {
             className="px-3 py-2 text-blue-900 border-blue-900 border border-solid cursor-pointer transition-all 
             hover:bg-blue-900 hover:text-white"
           >
-            Live preview
+            View
           </span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

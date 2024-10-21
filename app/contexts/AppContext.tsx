@@ -1,6 +1,7 @@
 "use client";
 
 import { createContext, Dispatch, ReactNode, useMemo, useReducer } from "react";
+import projects from "../../data/projects";
 
 export type AppContextProps = {
   index: number;
@@ -8,6 +9,7 @@ export type AppContextProps = {
   preview: boolean;
   type: number;
   loading: boolean;
+  projects: any[];
 };
 
 type Action<T extends keyof AppContextProps> = {
@@ -22,6 +24,7 @@ const init: AppContextProps = {
   preview: false,
   type: 0,
   loading: true,
+  projects,
 };
 
 // Reducer function
