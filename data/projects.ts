@@ -2,7 +2,7 @@ const projects = [
   {
     id: "1",
     name: "UI Coding",
-    tags: ["HTML", "CSS", "JS", "SASS", "Tailwind"],
+    use: "HTML, CSS, JS, SASS, Tailwind",
     projects: [
       {
         id: "1",
