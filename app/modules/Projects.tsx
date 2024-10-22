@@ -18,7 +18,7 @@ const Projects = () => {
       projects I made at home to improve my skills."
         />
       </div>
-      <div className="w-full box-content px-2 lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 mx-auto gap-3 pt-10">
+      <div className="box-content px-2 lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 mx-auto gap-3 pt-10">
         {projects.map((item) => (
           <ItemProject key={item.id} item={item} />
         ))}

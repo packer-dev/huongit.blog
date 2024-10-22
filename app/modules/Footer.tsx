@@ -3,7 +3,7 @@ import FollowMe from "./FollowMe";
 
 const Footer = () => {
   return (
-    <div className="w-full py-4 box-content">
+    <div className="py-4 px-2 box-content">
       <div className="wrapper flex justify-between flex-col md:flex-row">
         <div className="text-gray-600 flex items-center md:mb-0 text-center md:text-left">
           © 2022 by Trà Tấn Hưởng

@@ -9,7 +9,7 @@ import ImageCustom from "@/components/Image";
 const AboutMe = () => {
   const newAvatar = "https://picsum.photos/536/354";
   return (
-    <div id="about-me" className="w-full relative about__me">
+    <div id="about-me" className="px-2 mx-auto lg:w-full relative about__me">
       <div className="w-1/3 bg-gray-200 md:h-full"></div>
       <div
         className="w-full md:w-11/12 lg:w-2/3 xl:w-1/2 border-2 border-solid border-gray-200 shadow-xl rounded-lg bg-white 

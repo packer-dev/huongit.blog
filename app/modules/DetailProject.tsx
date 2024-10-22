@@ -1,6 +1,5 @@
 "use client";
 
-import ImageCustom from "@/components/Image";
 import ItemProject from "@/components/ItemProject";
 import { PAGE_PROJECT } from "@/constants";
 import { AppContext } from "@/contexts/AppContext";
@@ -34,9 +33,11 @@ const DetailProject = () => {
           {project?.name}
         </span>
       </div>
-      <ImageCustom
-        className="w-80 h-80"
-        src="https://picsum.photos/id/1084/536/354?grayscale"
+      <div
+        className="w-[960px] h-[690px] bg-cover scale-120"
+        style={{
+          backgroundImage: `url("https://nqhlmtbglaailxpcvkwb.supabase.co/storage/v1/object/public/packer-ui/screencapture-tratanhuong01-github-io-lovepop-clone-2024-10-21-22_01_10.png")`,
+        }}
       />
       <p className="font-bold py-4 text-2xl">More project by me</p>
       <div className="w-full box-content grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-auto gap-3">

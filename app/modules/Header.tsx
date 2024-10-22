@@ -37,7 +37,7 @@ const Header = () => {
               route.to && (
                 <li
                   key={route.name}
-                  className={`lg:px-4 text-sm lg:text-base lg:py-1.5 p-1 px-2 rounded-full mx-0.5 lg:mx-1 font-semibold ${
+                  className={`lg:px-4 text-sm lg:text-base lg:py-1.5 p-1 md:px-2 rounded-full mx-0.5 lg:mx-1 font-semibold ${
                     route.to !== pathname
                       ? "border-2 border-solid border-white hover:text-blue-600 hover:border-blue-600"
                       : "border-2 border-solid border-blue-600 text-blue-600"

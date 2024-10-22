@@ -3,11 +3,11 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div id="contact" className="w-full bg-gray-100 pb-24">
-      <div className="w-full box-content px-2 lg:w-2/3 mx-auto pt-16">
+    <div id="contact" className="w-full px-2 bg-gray-100 pb-24">
+      <div className="box-content px-2 lg:w-2/3 mx-auto pt-16">
         <Title title="Contact me" />
       </div>
-      <div className="w-full px-3 ml-1.5 mt-16 md:mx-auto lg:w-2/3 xl:w-5/12 py-10 lg:p-10 bg-white box-border">
+      <div className="px-3 ml-1.5 mt-16 md:mx-auto lg:w-2/3 xl:w-5/12 py-10 lg:p-10 bg-white box-border">
         <div className="w-full flex">
           <div className="w-1/2 mr-10">
             <label className="font-semibold">
