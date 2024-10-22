@@ -11,12 +11,14 @@ const DetailProject = () => {
     state: { projects },
   } = useContext(AppContext);
   const params = useParams();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [project, setProject] = useState<any>();
   const router = useRouter();
   useEffect(() => {
     setProject(
       projects.find((item) => item.id.toString() === params?.pathname)
     );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [params?.id]);
   return (
     <div className="wrapper box-content px-2 mx-auto pb-6 pt-[96px]">

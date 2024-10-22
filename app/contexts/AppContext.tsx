@@ -9,6 +9,7 @@ export type AppContextProps = {
   preview: boolean;
   type: number;
   loading: boolean;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   projects: any[];
 };
 

@@ -8,6 +8,7 @@ import Link from "next/link";
 import ImageCustom from "../Image";
 import Technology from "./Technology";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const ItemProject = ({ item }: { item: any }) => {
   return (
     <Link

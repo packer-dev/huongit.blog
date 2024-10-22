@@ -10,7 +10,7 @@ import PreviewImageVideo from "./modules/PreviewImageVideo";
 import { usePathname } from "next/navigation";
 
 export type ContainerProps = {
-  children: ReactNode;
+  children?: ReactNode;
   landingPage?: boolean;
 };
 
