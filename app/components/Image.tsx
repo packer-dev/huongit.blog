@@ -28,7 +28,7 @@ const ImageCustom = ({
           aria-hidden
           alt=""
           fill
-          src={src || `https://picsum.photos/seed/picsum/536/354`}
+          src={src ?? `https://picsum.photos/seed/picsum/536/354`}
         />
       </div>
     </div>

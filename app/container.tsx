@@ -51,7 +51,7 @@ const Container = ({ children, landingPage = true }: ContainerProps) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
   return (
-    <div className="w-full">
+    <div className="w-full sm:w-11/12">
       <Header />
       {/* {index !== -1 ? ( */}
       {loading && (

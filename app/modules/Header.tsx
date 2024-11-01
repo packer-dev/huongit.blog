@@ -26,9 +26,9 @@ const Header = () => {
             className="w-14 h-14 rounded-full mr-4 object-cover"
           />
           <div className=" items-center hidden lg:flex">
-            <span className="font-bold text-2xl">Trà Tấn Hưởng</span>
+            {/* <span className="font-bold text-2xl">Trà Tấn Hưởng</span> */}
             <span className="mx-2">/</span>
-            <span className="text-gray-600">FULLSTACK DEVELOPER</span>
+            {/* <span className="text-gray-600">FULLSTACK DEVELOPER</span> */}
           </div>
         </div>
         <ul className="flex items-center">
