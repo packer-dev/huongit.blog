@@ -51,9 +51,8 @@ const Container = ({ children, landingPage = true }: ContainerProps) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
   return (
-    <div className="w-full sm:w-11/12">
+    <div className="w-full">
       <Header />
-      {/* {index !== -1 ? ( */}
       {loading && (
         <div
           className="w-full items-center justify-center flex fixed"
@@ -75,9 +74,6 @@ const Container = ({ children, landingPage = true }: ContainerProps) => {
       ) : (
         children
       )}
-      {/* ) : (
-        <NotFound />
-      )} */}
       <Footer />
       {preview && <PreviewImageVideo />}
     </div>

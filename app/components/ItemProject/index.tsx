@@ -13,12 +13,13 @@ const ItemProject = ({ item }: { item: any }) => {
   return (
     <Link
       href={`/projects/${item.id}`}
-      className="relative pb-2 border border-gray-300 shadow-md"
+      className="relative border border-gray-300 shadow-md"
     >
       <div className="relative">
         <ImageCustom
           autoSizePercent={60}
-          className="rounded-sm cursor-pointer"
+          src={item.thumbnail}
+          className="rounded-sm cursor-pointer object-contain"
         />
         <div
           className="px-1.5 py-1 rounded-sm bg-green-500 w-auto my-2 inline-block justify-center 
@@ -30,9 +31,9 @@ const ItemProject = ({ item }: { item: any }) => {
           </span>
         </div>
       </div>
-      <div className="px-3">
+      <div className="p-3 bg-white">
         <p
-          className="font-semibold text-gray-600 pt-1 block mt-1 cursor-pointer hover:text-blue-500 
+          className="font-semibold text-gray-600 pt-1 block cursor-pointer hover:text-blue-500 
       whitespace-nowrap text-ellipsis w-full overflow-hidden"
         >
           {item.name}
@@ -47,7 +48,7 @@ const ItemProject = ({ item }: { item: any }) => {
             <Technology key={child} tech={child} />
           ))}
         </div>
-        <div className="flex justify-between pt-4 mb-2 items-center">
+        <div className="flex justify-between pt-4 items-center">
           <HoverCard>
             <HoverCardTrigger asChild>
               <span className="bx bxl-github text-3xl cursor-pointer"></span>

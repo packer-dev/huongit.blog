@@ -23,7 +23,7 @@ const ItemResume = ({
 const Resume = () => {
   return (
     <div id="resume" className="w-full bg-gray-100">
-      <div className="w-full box-content px-2 lg:w-2/3 mx-auto py-16">
+      <div className="wrapper box-content px-2 mx-auto py-16">
         <Title
           title="Resume"
           description="Below are some projects I did myself during my schooling and some

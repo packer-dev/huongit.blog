@@ -26,9 +26,9 @@ const Header = () => {
             className="w-14 h-14 rounded-full mr-4 object-cover"
           />
           <div className=" items-center hidden lg:flex">
-            {/* <span className="font-bold text-2xl">Trà Tấn Hưởng</span> */}
+            <span className="font-bold text-2xl">Trà Tấn Hưởng</span>
             <span className="mx-2">/</span>
-            {/* <span className="text-gray-600">FULLSTACK DEVELOPER</span> */}
+            <span className="text-gray-600">FULLSTACK DEVELOPER</span>
           </div>
         </div>
         <ul className="flex items-center">
@@ -38,7 +38,8 @@ const Header = () => {
                 <li
                   key={route.name}
                   className={`lg:px-4 text-sm lg:text-base lg:py-1.5 p-1 md:px-2 rounded-full mx-0.5 lg:mx-1 font-semibold ${
-                    route.to !== pathname
+                    (route.to.length === 1 && pathname.length > 1) ||
+                    pathname.indexOf(route.to) === -1
                       ? "border-2 border-solid border-white hover:text-blue-600 hover:border-blue-600"
                       : "border-2 border-solid border-blue-600 text-blue-600"
                   }`}

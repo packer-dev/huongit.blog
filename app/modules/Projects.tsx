@@ -11,17 +11,19 @@ const Projects = () => {
   } = useContext(AppContext);
   return (
     <div id="projects" className="w-full bg-gray-100 pb-16">
-      <div className="w-full box-content px-2 lg:w-2/3 mx-auto pt-16">
-        <Title
-          title="Projects"
-          description="Below are some projects I did myself during my schooling and some
-      projects I made at home to improve my skills."
-        />
-      </div>
-      <div className="box-content px-2 lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 mx-auto gap-3 pt-10">
-        {projects.map((item) => (
-          <ItemProject key={item.id} item={item} />
-        ))}
+      <div className="wrapper mx-auto pt-16 box-content px-2">
+        <div className="w-full">
+          <Title
+            title="Projects"
+            description="Below are some projects I did myself during my schooling and some
+            projects I made at home to improve my skills."
+          />
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 mx-auto gap-3 pt-10">
+          {projects.map((item) => (
+            <ItemProject key={item.id} item={item} />
+          ))}
+        </div>
       </div>
     </div>
   );

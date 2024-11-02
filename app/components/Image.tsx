@@ -21,12 +21,13 @@ const ImageCustom = ({
       className={`overflow-hidden relative ${className}`}
       style={autoSizePercent ? { paddingTop: `${autoSizePercent}%` } : {}}
     >
-      <div className="w-full h-full">
+      <div className="absolute top-0 left-0 bottom-0 right-0">
         <Image
           className="w-full h-full object-cover"
           onClick={() => onClick?.()}
           aria-hidden
           alt=""
+          sizes="100"
           fill
           src={src ?? `https://picsum.photos/seed/picsum/536/354`}
         />
