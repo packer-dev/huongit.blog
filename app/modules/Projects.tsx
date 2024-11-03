@@ -20,7 +20,7 @@ const Projects = () => {
           />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 mx-auto gap-3 pt-10">
-          {projects.map((item) => (
+          {projects.slice(0, 6).map((item) => (
             <ItemProject key={item.id} item={item} />
           ))}
         </div>

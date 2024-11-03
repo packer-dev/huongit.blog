@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, Dispatch, ReactNode, useMemo, useReducer } from "react";
-import projects from "../../data/projects";
+import projects, { Project } from "@/data/projects";
 
 export type AppContextProps = {
   index: number;
@@ -10,7 +10,7 @@ export type AppContextProps = {
   type: number;
   loading: boolean;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  projects: any[];
+  projects: Project[];
 };
 
 type Action<T extends keyof AppContextProps> = {

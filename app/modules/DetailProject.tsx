@@ -1,6 +1,5 @@
 "use client";
 
-import ImageCustom from "@/components/Image";
 import ItemProject from "@/components/ItemProject";
 import Technology from "@/components/ItemProject/Technology";
 import { Button } from "@/components/ui/button";
@@ -8,21 +7,25 @@ import { PAGE_PROJECT } from "@/constants";
 import { AppContext } from "@/contexts/AppContext";
 import { useParams, useRouter } from "next/navigation";
 import React, { useContext, useEffect, useState } from "react";
+import { Project } from "@/data/projects";
+import PreviewImage from "@/components/PreviewImage";
 
 const DetailProject = () => {
   const {
     state: { projects },
   } = useContext(AppContext);
   const params = useParams();
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const [project, setProject] = useState<any>();
+  const [project, setProject] = useState<Project>();
   const router = useRouter();
   useEffect(() => {
-    setProject(
-      projects.find((item) => item.id.toString() === params?.pathname)
+    const index = projects.findIndex(
+      (item) => item.id.toString() === params?.pathname
     );
+    if (index === -1) return;
+
+    setProject(projects[index]);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [params?.id]);
+  }, [params?.pathname]);
   return (
     <div className="wrapper box-content px-2 mx-auto pb-6 pt-[96px]">
       <div className="flex gap-2 items-center py-2 text-gray-600 font-semibold">
@@ -39,11 +42,7 @@ const DetailProject = () => {
         </span>
       </div>
       <div className="flex gap-3">
-        <div className="w-2/3">
-          <div className="w-full h-[500px] overflow-hidden">
-            <ImageCustom src={project?.thumbnail} className="w-full h-full" />
-          </div>
-        </div>
+        <PreviewImage project={project} />
         <div className="flex-1 flex flex-col">
           <p className="font-bold text-gray-600">Projects:</p>
           <p className="font-semibold">{project?.name}</p>
@@ -75,14 +74,21 @@ const DetailProject = () => {
               way on your store...
             </p>
           </div>
-          <Button className="bg-blue-500 mt-2">Preview now</Button>
+          <Button
+            onClick={() => window.open(project?.preview, "_blank")}
+            className="bg-blue-500 mt-2"
+          >
+            Preview now
+          </Button>
         </div>
       </div>
       <p className="font-bold py-4 text-2xl">More project by me</p>
       <div className="w-full box-content grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-auto gap-3">
-        {projects.slice(0, 4).map((item) => (
-          <ItemProject item={item} key={item.id} />
-        ))}
+        {project &&
+          projects
+            .filter((item) => item.id !== params?.pathname)
+            .slice(0, 4)
+            .map((item) => <ItemProject item={item} key={item.id} />)}
       </div>
       <div className="pb-16"></div>
     </div>

@@ -1,4 +1,7 @@
-const Technology = ({ tech }: { tech: string }) => {
+type TechnologyProps = { tech: string; loading?: boolean };
+
+const Technology = ({ tech, loading }: TechnologyProps) => {
+  if (loading) return <div className="bg-slate-200 w-6 h-2 rounded-lg" />;
   switch (tech) {
     case "React":
       return (
