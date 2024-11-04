@@ -18,7 +18,8 @@ const AboutMe = () => {
         <div className="w-5/12 bg-gray-100 h-full">
           <ImageCustom
             src={newAvatar ?? avatar}
-            className="w-32 h-32 md:w-52 md:h-52 mt-8 rounded-full object-cover mx-auto"
+            className="w-32 h-32 md:w-52 md:h-52 mt-8 rounded-full mx-auto"
+            object="cover"
           />
           <p className="text-center font-bold text-2xl my-4">Trà Tấn Hưởng</p>
           <div className="w-16 py-0.5 bg-gray-600 mx-auto"></div>

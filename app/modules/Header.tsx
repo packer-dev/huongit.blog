@@ -23,7 +23,8 @@ const Header = () => {
         >
           <ImageCustom
             src={newAvatar ?? avatar}
-            className="w-14 h-14 rounded-full mr-4 object-cover"
+            className="w-14 h-14 rounded-full mr-4"
+            object="cover"
           />
           <div className=" items-center hidden lg:flex">
             <span className="font-bold text-2xl">Trà Tấn Hưởng</span>
