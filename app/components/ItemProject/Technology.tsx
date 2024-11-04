@@ -21,10 +21,10 @@ const Technology = ({ tech, loading }: TechnologyProps) => {
           CSS
         </span>
       );
-    case "JS":
+    case "Javascript":
       return (
         <span className="bg-yellow-500 text-white text-xs font-semibold px-1 py-1 rounded-sm cursor-pointer">
-          JS
+          Javascript
         </span>
       );
     case "Spring boot":
@@ -51,16 +51,58 @@ const Technology = ({ tech, loading }: TechnologyProps) => {
           Web RTC
         </span>
       );
-    case "TS":
+    case "Typescript":
       return (
         <span className="bg-blue-900 text-white text-xs font-semibold px-1 py-1 rounded-sm cursor-pointer">
-          TS
+          Typescript
         </span>
       );
     case "Python":
       return (
         <span className="bg-orange-300 text-white text-xs font-semibold px-1 py-1 rounded-sm cursor-pointer">
           Python
+        </span>
+      );
+    case "Fast API":
+      return (
+        <span className="bg-gray-950 text-white text-xs font-semibold px-1 py-1 rounded-sm cursor-pointer">
+          Fast API
+        </span>
+      );
+    case "Sass":
+      return (
+        <span className="bg-pink-500 text-white text-xs font-semibold px-1 py-1 rounded-sm cursor-pointer">
+          Sass
+        </span>
+      );
+    case "NextJS":
+      return (
+        <span className="bg-black text-white text-xs font-semibold px-1 py-1 rounded-sm cursor-pointer">
+          NextJS
+        </span>
+      );
+    case "C#":
+      return (
+        <span className="bg-indigo-500 text-white text-xs font-semibold px-1 py-1 rounded-sm cursor-pointer">
+          C#
+        </span>
+      );
+    case "WinForm":
+      return (
+        <span className="bg-green-500 text-white text-xs font-semibold px-1 py-1 rounded-sm cursor-pointer">
+          WinForm
+        </span>
+      );
+    case "Java Swing":
+      return (
+        <span className="bg-red-300 text-white text-xs font-semibold px-1 py-1 rounded-sm cursor-pointer">
+          Java Swing
+        </span>
+      );
+    case "AWS":
+      return (
+        <span className="bg-orange-500 text-white text-xs font-semibold px-1 py-1 rounded-sm cursor-pointer">
+          Java Swing
         </span>
       );
     default:
