@@ -14,7 +14,7 @@ type ItemProjectProps = { item: Project; loading?: boolean };
 const ItemProject = ({ item, loading }: ItemProjectProps) => {
   return (
     <div
-      className={`relative border border-gray-300 shadow-md cursor-pointer hover:opacity-70 ${
+      className={`w-full relative border border-gray-300 shadow-md cursor-pointer hover:opacity-70 ${
         loading ? "animate-pulse" : ""
       }`}
     >

@@ -41,7 +41,7 @@ const DetailProject = () => {
           {project?.name}
         </span>
       </div>
-      <div className="flex gap-3">
+      <div className="sm:flex gap-3">
         <PreviewImage project={project} />
         <div className="flex-1 flex flex-col">
           <p className="font-bold text-gray-600">Projects:</p>

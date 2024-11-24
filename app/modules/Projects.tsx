@@ -19,7 +19,7 @@ const Projects = () => {
             projects I made at home to improve my skills."
           />
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 mx-auto gap-3 pt-10">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-3 mx-auto gap-3 pt-10">
           {projects.map((item) => (
             <ItemProject key={item.id} item={item} />
           ))}

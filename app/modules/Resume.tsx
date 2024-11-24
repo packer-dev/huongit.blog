@@ -37,12 +37,18 @@ const Resume = () => {
           <p className="my-2 font-bold text-xl">Programming Language</p>
           <p>HTML, CSS, Javascript, PHP, Java, Python, Typescript</p>
           <p className="my-2 font-bold text-xl">Server Side Framework</p>
-          <p>Spring boot, Laravel</p>
+          <p>Spring boot, Laravel, NodeJS</p>
           <p className="my-2 font-bold text-xl">Database</p>
           <p>SQL Server, MySQL, PostgreSQL, Firebase</p>
           <p className="my-2 font-bold text-xl">Web Framework</p>
-          <p>ReactJS, VueJS</p>
-          <p className="my-2 font-bold text-xl">Basic NodeJS</p>
+          <p>ReactJS, VueJS, NextJS</p>
+          <p className="my-2 font-bold text-xl">Mobile Framework</p>
+          <p>React Native</p>
+          <p className="my-2 font-bold text-xl">Desktop Framework</p>
+          <p>Winform, Java swing</p>
+          <p className="my-2 font-bold text-xl">Open source</p>
+          <p>AWS (Glue, Redshift, S3, DMS, Lambda, EC2)</p>
+          <p>Supabase</p>
         </ItemResume>
         <ItemResume title={"EDUCATIONS"}>
           <p className="my-2 font-bold text-xl">

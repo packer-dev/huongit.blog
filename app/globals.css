@@ -24,7 +24,7 @@ body {
   overflow-x: auto;
 }
 .wrapper {
-  width: 1180px;
+  max-width: 1180px;
   margin: auto;
 }
 .border-b-3 {

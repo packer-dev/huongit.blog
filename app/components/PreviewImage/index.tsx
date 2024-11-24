@@ -5,7 +5,7 @@ import { useState } from "react";
 const PreviewImage = ({ project }: { project?: Project }) => {
   const [current, setCurrent] = useState(0);
   return (
-    <div className="w-2/3">
+    <div className="sm:w-2/3">
       <div className="w-full h-[500px] flex flex-col gap-3 overflow-hidden">
         <ImageCustom
           src={project?.url[current]?.link}
