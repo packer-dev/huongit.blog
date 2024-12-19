@@ -14,7 +14,7 @@ type ItemProjectProps = { item: Project; loading?: boolean };
 const ItemProject = ({ item, loading }: ItemProjectProps) => {
   return (
     <div
-      className={`w-full relative border border-gray-300 shadow-md cursor-pointer hover:opacity-70 ${
+      className={`w-full relative border border-gray-300 shadow-md cursor-pointer hover:opacity-90 flex flex-col ${
         loading ? "animate-pulse" : ""
       }`}
     >
@@ -30,18 +30,20 @@ const ItemProject = ({ item, loading }: ItemProjectProps) => {
         {loading ? (
           <div className="h-2 animate-pulse rounded-sm bg-slate-400 w-16 my-2 inline-block absolute top-1 left-3" />
         ) : (
-          <div
-            className="px-1.5 py-1 rounded-sm bg-green-500 w-auto my-2 inline-block justify-center 
-          text-white absolute top-1 left-3"
-          >
-            <span className="bx bx-timer mr-1"></span>
-            <span className="text-sm relative -top-0.5 font-semibold">
-              Time : 2 months
-            </span>
-          </div>
+          !!item.time && (
+            <div
+              className="px-1.5 py-1 rounded-sm bg-gray-500 w-auto my-2 inline-block justify-center 
+       text-white absolute top-1 left-3"
+            >
+              <span className="bx bx-timer mr-1"></span>
+              <span className="text-sm relative -top-0.5 font-semibold">
+                {item.time}
+              </span>
+            </div>
+          )
         )}
       </div>
-      <div className="p-3 bg-white">
+      <div className="p-3 bg-white flex flex-col flex-1">
         {loading ? (
           <p className="h-2 pt-1 bg-slate-200 rounded-lg" />
         ) : (
@@ -60,14 +62,14 @@ const ItemProject = ({ item, loading }: ItemProjectProps) => {
           </p>
         )}
         {loading ? (
-          <div className="flex-wrap gap-2 items-center my-2 flex opacity-85">
-            <span className="h-2 bg-slate-200 block w-16" />
+          <div className="flex-wrap gap-2 items-center my-2 flex opacity-85 flex-1">
+            <span className="div" />
             {item.use.split(", ").map((child: string) => (
-              <Technology key={child} tech={child} />
+              <Technology key={child} tech={child} loading={loading} />
             ))}
           </div>
         ) : (
-          <div className="flex-wrap gap-2 items-center my-2 flex opacity-85">
+          <div className="flex-wrap gap-2 items-center my-2 flex opacity-85 flex-1">
             <span className="text-sm font-bold text-gray-600">
               Technologies:
             </span>
@@ -78,32 +80,41 @@ const ItemProject = ({ item, loading }: ItemProjectProps) => {
               ))}
           </div>
         )}
-        <div className="flex justify-between pt-4 items-center">
-          <HoverCard>
-            <HoverCardTrigger
-              onClick={() => window.open(item.github, "_blank")}
-              asChild
+        {loading ? (
+          <div className="flex justify-between pt-4 items-center">
+            <div className="rounded-full bg-slate-200 block w-10 h-10" />
+            <div className="rounded-full bg-slate-200 block w-10 h-10" />
+          </div>
+        ) : (
+          <div className="flex justify-between pt-4 items-center">
+            <HoverCard>
+              <HoverCardTrigger
+                onClick={() =>
+                  item.github && window.open(item.github, "_blank")
+                }
+                asChild
+              >
+                {item.github ? (
+                  <span className="bx bxl-github text-3xl cursor-pointer" />
+                ) : (
+                  <span className="bx bxs-lock-alt text-3xl cursor-pointer" />
+                )}
+              </HoverCardTrigger>
+              <HoverCardContent className="w-auto p-2 bg-gray-900 text-white font-semibold">
+                <p className="text-xs">
+                  {item.github ? "Github" : "This project is private"}
+                </p>
+              </HoverCardContent>
+            </HoverCard>
+            <Link
+              href={`/projects/${item.id}`}
+              className="px-2 text-sm font-semibold py-2 text-blue-900 border-blue-900 border border-solid cursor-pointer transition-all 
+           hover:bg-blue-900 hover:text-white rounded-sm"
             >
-              {item.github ? (
-                <span className="bx bxl-github text-3xl cursor-pointer" />
-              ) : (
-                <span className="bx bxs-lock-alt text-3xl cursor-pointer" />
-              )}
-            </HoverCardTrigger>
-            <HoverCardContent className="w-auto p-2 bg-gray-900 text-white font-semibold">
-              <p className="text-xs">
-                {item.github ? "Github" : "This project is private"}
-              </p>
-            </HoverCardContent>
-          </HoverCard>
-          <Link
-            href={`/projects/${item.id}`}
-            className="px-3 py-2 text-blue-900 border-blue-900 border border-solid cursor-pointer transition-all 
-            hover:bg-blue-900 hover:text-white"
-          >
-            View
-          </Link>
-        </div>
+              View project
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );

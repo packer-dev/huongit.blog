@@ -3,6 +3,7 @@ const projects: Project[] = [
     id: "f418da2b-76b4-4707-aaa9-733af4192c3f",
     name: "Lovepop",
     use: "HTML, CSS, Javascript, Tailwind",
+    year: 2022,
     thumbnail:
       "https://nqhlmtbglaailxpcvkwb.supabase.co/storage/v1/object/public/packer-ui/lovepop/thumbnail.png",
     description: "Coding UI for wordpress",
@@ -48,17 +49,14 @@ const projects: Project[] = [
         name: "Cart",
       },
     ],
-    github: "https://github.com/tratanhuong01/lovepop_clone",
-    preview: "https://tratanhuong01.github.io/lovepop_clone",
+    preview: "https://lovepop-clone.vercel.app/",
     role: "FrontEnd",
-    time: {
-      from: "03-03-2022",
-      to: "09-03-2022",
-    },
+    time: "2 weeks",
   },
   {
     id: "5b26fb15-cad2-4841-8d7a-89220df04cf6",
     name: "Fenshui",
+    year: 2022,
     use: "HTML, CSS, Javascript, JQuery, Sass",
     thumbnail:
       "https://nqhlmtbglaailxpcvkwb.supabase.co/storage/v1/object/public/packer-ui/fenshui/thumbnail.png",
@@ -95,14 +93,15 @@ const projects: Project[] = [
         name: "Contact",
       },
     ],
-    preview: "https://tratanhuong01.github.io/fenshui",
+    preview: "https://fenshui.vercel.app/",
     role: "FrontEnd",
-    github: "",
+    time: "1 week",
   },
   {
     id: "168960ca-7e08-4430-88b4-ca93a4821369",
     name: "Codongvps",
     use: "HTML, CSS, Javascript, Sass",
+    year: 2022,
     thumbnail:
       "https://nqhlmtbglaailxpcvkwb.supabase.co/storage/v1/object/public/packer-ui/codongvps/thumbnail.png",
     description: "Coding UI for wordpress",
@@ -143,11 +142,13 @@ const projects: Project[] = [
         name: "Contact",
       },
     ],
+    time: "1 week",
   },
   {
     id: "8e6d95eb-728d-4362-94b2-ad8345cbd0b3",
     name: "Quizlet",
     use: "HTML, CSS, Javascript, ReactJS, TailwindCSS",
+    year: 2022,
     thumbnail:
       "https://nqhlmtbglaailxpcvkwb.supabase.co/storage/v1/object/public/packer-ui/quizlet/thumbnail.png",
     description: "Coding UI",
@@ -177,6 +178,7 @@ const projects: Project[] = [
   {
     id: "4aab7e52-a6b7-46d1-87b6-aa79229e20fd",
     name: "Macbook UI",
+    year: 2022,
     use: "HTML, CSS, Javascript, ReactJS, TailwindCSS",
     thumbnail:
       "https://nqhlmtbglaailxpcvkwb.supabase.co/storage/v1/object/public/packer-ui/macbook/thumbnail.png",
@@ -197,6 +199,7 @@ const projects: Project[] = [
   {
     id: "490cbb8d-8eb2-4288-8d0c-fa07886e6190",
     name: "F8",
+    year: 2022,
     use: "HTML, CSS, Javascript, ReactJS, TailwindCSS",
     thumbnail:
       "https://nqhlmtbglaailxpcvkwb.supabase.co/storage/v1/object/public/packer-ui/f8/thumbnail.png",
@@ -233,11 +236,15 @@ const projects: Project[] = [
         name: "Detail course",
       },
     ],
+    preview: "https://f8-clone-tratanhuong01.vercel.app/",
+    github: "https://github.com/tratanhuong01/f8-clone",
   },
   {
     id: "e6eb14ec-a2e5-4a50-8663-8c329287e0c1",
     name: "Batran cooking",
     use: "HTML, CSS, Javascript, SASS",
+    year: 2022,
+    time: "1 week",
     thumbnail:
       "https://nqhlmtbglaailxpcvkwb.supabase.co/storage/v1/object/public/packer-ui/batrancooking/thumbnail.png",
     description: "",
@@ -283,10 +290,12 @@ const projects: Project[] = [
         name: "About",
       },
     ],
+    preview: "https://batran-cooking.vercel.app/",
   },
   {
     id: "81d4fe52-290d-4129-b757-61cff654cc66",
     name: "Shopping cart website (UI)",
+    year: 2022,
     use: "HTML, CSS, ReactJS, Typescript, Sass",
     thumbnail:
       "https://nqhlmtbglaailxpcvkwb.supabase.co/storage/v1/object/public/packer-ui/shoppingcart/thumbnail.png",
@@ -313,10 +322,14 @@ const projects: Project[] = [
         name: "Contact",
       },
     ],
+    preview: "https://app-shopping-cart.vercel.app/",
+    github: "",
   },
   {
     id: "f0f9b006-a64d-4fad-86f5-ea79f1add0d9",
     name: "Packer UI",
+    year: 2024,
+    time: "5 months",
     use: "HTML, CSS, ReactJS, Typescript, Firebase, Python, FastAPI",
     thumbnail:
       "https://nqhlmtbglaailxpcvkwb.supabase.co/storage/v1/object/public/packer-ui/packerui/thumbnail.png",
@@ -328,10 +341,14 @@ const projects: Project[] = [
         name: "Home",
       },
     ],
+    preview: "https://packer-ui.vercel.app/",
+    github: "https://github.com/tratanhuong01/packer-ui",
   },
   {
     id: "e34ac605-491d-4616-99b4-30ee1bd973e2",
     name: "Youtube Clone",
+    year: 2021,
+    time: "1 week",
     thumbnail:
       "https://nqhlmtbglaailxpcvkwb.supabase.co/storage/v1/object/public/packer-ui/youtube/thumbnail.png",
     description: "",
@@ -342,11 +359,15 @@ const projects: Project[] = [
         name: "Home",
       },
     ],
+    preview: "https://react-youtube-tratanhuong01.vercel.app/",
     use: "HTML, CSS, Javascript, ReactJS, TailwindCSS",
+    github: "https://github.com/tratanhuong01/react_youtube",
   },
   {
     id: "0b9e66bc-e658-4242-94e9-475c24151ea7",
     name: "Tiktok Clone",
+    year: 2021,
+    time: "3 weeks",
     thumbnail:
       "https://nqhlmtbglaailxpcvkwb.supabase.co/storage/v1/object/public/packer-ui/tiktok/thumbnail.png",
     description: "",
@@ -367,11 +388,14 @@ const projects: Project[] = [
         name: "Profile",
       },
     ],
-    use: "HTML,CSS,Javascript ,ReactJS,TailwindCSS",
+    use: "HTML, CSS, Javascript, ReactJS, TailwindCSS",
+    preview: "https://react-tiktok.vercel.app/",
+    github: "https://github.com/tratanhuong01/react-tiktok",
   },
   {
     id: "38cab7b6-22b1-456a-b483-d8c4351f5b89",
     name: "Duolingo Clone",
+    year: 2021,
     thumbnail:
       "https://nqhlmtbglaailxpcvkwb.supabase.co/storage/v1/object/public/packer-ui/duolingo/thumbnail.png",
     description: "",
@@ -383,10 +407,13 @@ const projects: Project[] = [
       },
     ],
     use: "HTML, CSS, Javascript, ReactJS, TailwindCSS",
+    preview: "https://react-duolingo.vercel.app/",
+    github: "https://github.com/tratanhuong01/react-duolingo",
   },
   {
     id: "cafa43a0-957f-45ad-b0f7-ecb2546b465c",
     name: "App ecommerce (React Native)",
+    year: 2024,
     thumbnail:
       "https://nqhlmtbglaailxpcvkwb.supabase.co/storage/v1/object/public/packer-ui/ecommercemobile/thumbnail.png",
     description: "",
@@ -422,11 +449,13 @@ const projects: Project[] = [
         name: "Profile",
       },
     ],
-    use: "React Native, Firebase, Python (Fast API)",
+    preview: "https://snack.expo.dev/@trahuong.dev/ecommerce",
+    use: "React Native, Javascript, Firebase, Python, Fast API",
   },
   {
     id: "e84ca1bc-2449-4366-a077-42ad82184a05",
     name: "Facebook Clone (Web)",
+    year: 2024,
     thumbnail: "",
     description: "",
     url: [],
@@ -435,6 +464,7 @@ const projects: Project[] = [
   {
     id: "a628bc05-02cc-4394-824e-810a642b726e",
     name: "Facebook Clone (Mobile)",
+    year: 2024,
     thumbnail: "",
     description: "",
     url: [],
@@ -451,7 +481,8 @@ const projects: Project[] = [
   {
     id: "92819fec-0967-4a91-bf9e-2eadadb95f06",
     name: "Hopital",
-    use: "HTML, CSS, Javascript, Tailwind",
+    year: 2022,
+    use: "HTML, CSS, Javascript, TailwindCSS",
     thumbnail:
       "https://nqhlmtbglaailxpcvkwb.supabase.co/storage/v1/object/public/packer-ui/hopital-web/thumbnail.png",
     description: "",
@@ -501,22 +532,30 @@ const projects: Project[] = [
   {
     id: "03e950b9-1328-45dc-bf3c-20fe4299734c",
     name: "Graduation Project",
+    year: 2021,
+    time: "5 months",
     thumbnail: "",
     description: "",
     url: [],
-    use: " HTML, CSS, Javascript, TailwindCSS, ReactJS, NodeJS, MySQL, Spring Boot, SocketIO",
+    use: "HTML, CSS, Javascript, TailwindCSS, ReactJS, NodeJS, MySQL, Spring Boot, SocketIO",
   },
   {
     id: "72bc9ff0-b5c6-4512-8d19-3ffd0ee7abf2",
     name: "Chat GPT",
+    year: 2024,
+    time: "2 weeks",
     thumbnail: "",
     description: "",
     url: [],
-    use: " HTML, CSS, Javascript, TailwindCSS, ReactJS, NodeJS, MySQL, Spring Boot, SocketIO",
+    use: "HTML, CSS, Javascript, TailwindCSS, ReactJS, NodeJS, MySQL, Spring Boot, SocketIO",
+    preview: "https://packer-ui.vercel.app/chat-gpt",
+    github: "https://github.com/tratanhuong01/packer-ui",
   },
   {
     id: "19956659-da16-444c-bcc0-27e87e6d7b09",
     name: "Sell flowers",
+    year: 2021,
+    time: "3 days",
     thumbnail:
       "https://nqhlmtbglaailxpcvkwb.supabase.co/storage/v1/object/public/packer-ui/sell-flowers/thumbnail.png",
     description: "",
@@ -567,11 +606,14 @@ const projects: Project[] = [
         name: "Contact",
       },
     ],
-    use: " HTML, CSS, Javascript, TailwindCSS, ReactJS, NodeJS, MySQL, Spring Boot, SocketIO",
+    use: "HTML, CSS, Javascript, TailwindCSS, ReactJS, NodeJS, MySQL, Spring Boot, SocketIO",
+    role: "Fullstack",
   },
   {
     id: "68155d21-7a56-4692-9de9-81cf85615a2c",
     name: "Sell watch",
+    year: 2021,
+    time: "4 days",
     thumbnail:
       "https://nqhlmtbglaailxpcvkwb.supabase.co/storage/v1/object/public/packer-ui/sell-watch/thumbnail.png",
     description: "",
@@ -612,7 +654,8 @@ const projects: Project[] = [
         name: "Detail product",
       },
     ],
-    use: " HTML, CSS, Javascript, TailwindCSS, ReactJS, NodeJS, MySQL, Spring Boot, SocketIO",
+    use: "HTML, CSS, Javascript, TailwindCSS, ReactJS, NodeJS, MySQL, Spring Boot, SocketIO",
+    role: "Fullstack",
   },
   {
     id: "0866fffe-b960-48a8-8842-f87f8dc8f6f1",
@@ -620,7 +663,7 @@ const projects: Project[] = [
     thumbnail: "",
     description: "",
     url: [],
-    use: " HTML, CSS, Javascript, TailwindCSS, ReactJS, NodeJS, MySQL, Spring Boot, SocketIO",
+    use: "HTML, CSS, Javascript, TailwindCSS, ReactJS, NodeJS, MySQL, Spring Boot, SocketIO",
   },
   {
     id: "7570f098-fc6c-44f6-b0c6-75c8f56791cd",
@@ -628,7 +671,7 @@ const projects: Project[] = [
     thumbnail: "",
     description: "",
     url: [],
-    use: " HTML, CSS, Javascript, TailwindCSS, ReactJS, NodeJS, MySQL, Spring Boot, SocketIO",
+    use: "HTML, CSS, Javascript, TailwindCSS, ReactJS, NodeJS, MySQL, Spring Boot, SocketIO",
   },
   {
     id: "fc9d434d-378c-4a8a-a25f-dfa6a66ef55d",
@@ -636,7 +679,7 @@ const projects: Project[] = [
     thumbnail: "",
     description: "",
     url: [],
-    use: " HTML, CSS, Javascript, TailwindCSS, ReactJS, NodeJS, MySQL, Spring Boot, SocketIO",
+    use: "HTML, CSS, Javascript, TailwindCSS, ReactJS, NodeJS, MySQL, Spring Boot, SocketIO",
   },
   {
     id: "37934621-2100-4a98-9c23-3e11688b9dfb",
@@ -644,7 +687,7 @@ const projects: Project[] = [
     thumbnail: "",
     description: "",
     url: [],
-    use: " HTML, CSS, Javascript, TailwindCSS, ReactJS, NodeJS, MySQL, Spring Boot, SocketIO",
+    use: "HTML, CSS, Javascript, TailwindCSS, ReactJS, NodeJS, MySQL, Spring Boot, SocketIO",
   },
 ];
 export interface Project {
@@ -654,15 +697,13 @@ export interface Project {
   thumbnail: string;
   description?: string;
   github?: string;
+  year?: number;
   url: {
     id: string;
     name: string;
     link: string;
   }[];
-  time?: {
-    from: string;
-    to: string;
-  };
+  time?: string;
   preview?: string;
   role?: "Fullstack" | "FrontEnd" | "Backend";
 }

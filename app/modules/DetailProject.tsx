@@ -74,12 +74,14 @@ const DetailProject = () => {
               way on your store...
             </p>
           </div>
-          <Button
-            onClick={() => window.open(project?.preview, "_blank")}
-            className="bg-blue-500 mt-2"
-          >
-            Preview now
-          </Button>
+          {!!project?.preview && (
+            <Button
+              onClick={() => window.open(project?.preview, "_blank")}
+              className="bg-blue-500 mt-2"
+            >
+              Preview now
+            </Button>
+          )}
         </div>
       </div>
       <p className="font-bold py-4 text-2xl">More project by me</p>

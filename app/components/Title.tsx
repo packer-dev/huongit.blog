@@ -1,12 +1,11 @@
 import React from "react";
 
-const Title = ({
-  description,
-  title,
-}: {
+type TitleProps = {
   description?: string;
   title: string;
-}) => {
+};
+
+const Title = ({ description, title }: TitleProps) => {
   return (
     <>
       <div className="w-full flex justify-center items-center">
