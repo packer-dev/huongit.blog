@@ -2,10 +2,25 @@
 const nextConfig = {
   // output: "export",
   images: {
-    domains: [
-      "picsum.photos",
-      "image.freepik.com",
-      "nqhlmtbglaailxpcvkwb.supabase.co",
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "picsum.photos",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "image.freepik.com",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "nqhlmtbglaailxpcvkwb.supabase.co",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
 };

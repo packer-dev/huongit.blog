@@ -38,6 +38,7 @@ const ImageCustom = ({
             alt=""
             sizes="100"
             fill
+            priority
             src={src ?? `https://picsum.photos/seed/picsum/536/354`}
           />
         )}

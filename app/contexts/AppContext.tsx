@@ -25,7 +25,7 @@ const init: AppContextProps = {
   preview: false,
   type: 0,
   loading: true,
-  projects,
+  projects: projects.filter((item) => item.url.length),
 };
 
 // Reducer function

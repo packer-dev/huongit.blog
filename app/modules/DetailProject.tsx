@@ -8,7 +8,7 @@ import { AppContext } from "@/contexts/AppContext";
 import { useParams, useRouter } from "next/navigation";
 import React, { useContext, useEffect, useState } from "react";
 import { Project } from "@/data/projects";
-import PreviewImage from "@/components/PreviewImage";
+import PreviewImage from "@/components/preview-image";
 
 const DetailProject = () => {
   const {
