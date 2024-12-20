@@ -86,7 +86,7 @@ const ItemProject = ({ item, loading }: ItemProjectProps) => {
             <div className="rounded-full bg-slate-200 block w-10 h-10" />
           </div>
         ) : (
-          <div className="flex justify-between pt-4 items-center">
+          <div className="flex justify-between pt-4 items-center relative">
             <HoverCard>
               <HoverCardTrigger
                 onClick={() =>

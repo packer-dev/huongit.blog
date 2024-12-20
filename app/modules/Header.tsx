@@ -1,6 +1,5 @@
 import React from "react";
 import { PAGE_ABOUT_ME } from "../constants";
-import avatar from "@/assets/images/avatar.jpg";
 import Link from "next/link";
 import routes from "../routes";
 import { usePathname, useRouter } from "next/navigation";
@@ -9,7 +8,8 @@ import ImageCustom from "@/components/Image";
 const Header = () => {
   const pathname = usePathname();
   const router = useRouter();
-  const newAvatar = "https://picsum.photos/536/354";
+  const newAvatar =
+    process.env.NEXT_PUBLIC_AVATAR ?? "https://picsum.photos/536/354";
   return (
     <div
       className="w-full py-4 fixed top-0 bg-white z-50 shadow-lg border-b border-solid 
@@ -22,7 +22,7 @@ const Header = () => {
           className="flex cursor-pointer"
         >
           <ImageCustom
-            src={newAvatar ?? avatar}
+            src={newAvatar}
             className="w-14 h-14 rounded-full mr-4"
             object="cover"
           />

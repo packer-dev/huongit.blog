@@ -22,11 +22,11 @@ const ImageCustom = ({
 }: ImageCustomProps) => {
   return (
     <div
-      className={`overflow-hidden relative ${className}`}
+      className={`overflow-hidden relative z-0 rounded-sm ${className}`}
       style={autoSizePercent ? { paddingTop: `${autoSizePercent}%` } : {}}
     >
       <div
-        className={`absolute top-0 left-0 bottom-0 right-0 ${
+        className={`absolute top-0 left-0 bottom-0 right-0 bg-white rounded-sm ${
           loading ? "bg-slate-200 animate-pulse" : ""
         }`}
       >

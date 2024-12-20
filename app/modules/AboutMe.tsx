@@ -3,11 +3,11 @@
 import React from "react";
 import FollowMe from "./FollowMe";
 import { CV_LINK, PAGE_PROJECT, PAGE_RESUME } from "../constants";
-import avatar from "@/assets/images/avatar.jpg";
 import ImageCustom from "@/components/Image";
 
 const AboutMe = () => {
-  const newAvatar = "https://picsum.photos/536/354";
+  const newAvatar =
+    process.env.NEXT_PUBLIC_AVATAR ?? "https://picsum.photos/536/354";
   return (
     <div id="about-me" className="px-2 mx-auto lg:w-full relative about__me">
       <div className="w-1/3 bg-gray-200 md:h-full"></div>
@@ -17,7 +17,7 @@ const AboutMe = () => {
       >
         <div className="w-5/12 bg-gray-100 h-full">
           <ImageCustom
-            src={newAvatar ?? avatar}
+            src={newAvatar}
             className="w-32 h-32 md:w-52 md:h-52 mt-8 rounded-full mx-auto"
             object="cover"
           />

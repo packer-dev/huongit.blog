@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="wrapper py-4 px-2 box-content">
       <div className=" flex justify-between flex-col md:flex-row">
         <div className="text-gray-600 flex items-center md:mb-0 text-center md:text-left">
-          © 2022 by Trà Tấn Hưởng
+          © {new Date().getFullYear()} by Trà Tấn Hưởng
         </div>
         <ul className="flex justify-around md:justify-center">
           <li className="justify-center flex flex-col mx-4 md:mx-7">
