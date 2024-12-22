@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, Dispatch, ReactNode, useMemo, useReducer } from "react";
-import projects, { Project } from "@/data/projects";
+import projects, { Project } from "../data/projects";
 
 export type AppContextProps = {
   index: number;

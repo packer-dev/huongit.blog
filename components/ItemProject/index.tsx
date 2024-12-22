@@ -7,7 +7,7 @@ import {
 import Link from "next/link";
 import ImageCustom from "../Image";
 import Technology from "./Technology";
-import { Project } from "@/data/projects";
+import { Project } from "../../data/projects";
 
 type ItemProjectProps = { item: Project; loading?: boolean };
 

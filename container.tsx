@@ -1,10 +1,9 @@
 "use client";
 
-import Header from "@/modules/Header";
+import Header from "./modules/Header";
 import React, { ReactNode, useContext, useEffect } from "react";
 import { AppContext } from "./contexts/AppContext";
 import routes from "./routes";
-// import NotFound from "./NotFound";
 import Footer from "./modules/Footer";
 import PreviewImageVideo from "./modules/PreviewImageVideo";
 import { usePathname } from "next/navigation";
@@ -38,7 +37,10 @@ const Container = ({ children, landingPage = true }: ContainerProps) => {
           const top =
             document.getElementById(pathname_)?.getBoundingClientRect()?.top ??
             0;
-          window.scrollTo(0, top + window.scrollY - 40);
+          window.scrollTo(
+            0,
+            top + window.scrollY - (pathname === "/" ? 100 : 40)
+          );
         }
         dispatch({ key: "loading", value: false });
       }, 500);

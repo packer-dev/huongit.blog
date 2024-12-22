@@ -1,14 +1,14 @@
 "use client";
 
-import ItemProject from "@/components/ItemProject";
-import Technology from "@/components/ItemProject/Technology";
-import { Button } from "@/components/ui/button";
-import { PAGE_PROJECT } from "@/constants";
-import { AppContext } from "@/contexts/AppContext";
+import ItemProject from "../components/ItemProject";
+import Technology from "../components/ItemProject/Technology";
+import { Button } from "../components/ui/button";
+import { PAGE_PROJECT } from "../constants";
+import { AppContext } from "../contexts/AppContext";
 import { useParams, useRouter } from "next/navigation";
 import React, { useContext, useEffect, useState } from "react";
-import { Project } from "@/data/projects";
-import PreviewImage from "@/components/preview-image";
+import { Project } from "../data/projects";
+import PreviewImage from "../components/preview-image";
 
 const DetailProject = () => {
   const {

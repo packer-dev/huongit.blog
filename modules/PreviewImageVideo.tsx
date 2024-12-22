@@ -1,4 +1,4 @@
-import { AppContext } from "@/contexts/AppContext";
+import { AppContext } from "../contexts/AppContext";
 import Image from "next/image";
 import React, { useContext, useState } from "react";
 

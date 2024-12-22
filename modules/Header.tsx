@@ -3,7 +3,7 @@ import { PAGE_ABOUT_ME } from "../constants";
 import Link from "next/link";
 import routes from "../routes";
 import { usePathname, useRouter } from "next/navigation";
-import ImageCustom from "@/components/Image";
+import ImageCustom from "../components/Image";
 
 const Header = () => {
   const pathname = usePathname();
@@ -15,7 +15,7 @@ const Header = () => {
       className="w-full py-4 fixed top-0 bg-white z-50 shadow-lg border-b border-solid 
     border-gray-200"
     >
-      <div className="wrapper flex justify-between box-border">
+      <div className="wrapper px-4 sm:px-0 flex justify-between box-border">
         <div
           aria-hidden
           onClick={() => router.push(PAGE_ABOUT_ME)}
@@ -32,7 +32,7 @@ const Header = () => {
             <span className="text-gray-600">FULLSTACK DEVELOPER</span>
           </div>
         </div>
-        <ul className="flex items-center">
+        <ul className="flex items-center gap-3">
           {routes.map(
             (route) =>
               route.to && (

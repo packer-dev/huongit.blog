@@ -1,6 +1,6 @@
 "use client";
 
-import { Project } from "@/data/projects";
+import { Project } from "../../data/projects";
 import ImageCustom from "../Image";
 import { useEffect, useState } from "react";
 
@@ -16,7 +16,7 @@ const PreviewImage = ({ project }: { project?: Project }) => {
   }, [current]);
   return (
     <div className="sm:w-2/3">
-      <div className="w-full h-[500px] flex flex-col gap-3 overflow-hidden">
+      <div className="w-full h-[300px] sm:h-[500px] flex flex-col gap-3 overflow-hidden">
         <div className="flex-1 flex flex-col relative">
           {loading && (
             <div className="flex-1 animate-pulse bg-slate-200 absolute top-0 left-0 bottom-0 right-0"></div>
@@ -29,7 +29,7 @@ const PreviewImage = ({ project }: { project?: Project }) => {
           />
         </div>
 
-        <div className="flex gap-3 items-center justify-center">
+        <div className="flex gap-3 items-center justify-center flex-wrap">
           {project?.url?.map((item, index) => (
             <span
               aria-hidden

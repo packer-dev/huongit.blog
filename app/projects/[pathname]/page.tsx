@@ -1,5 +1,5 @@
 import React from "react";
-import DetailProjectModule from "@/modules/DetailProject";
+import DetailProjectModule from "../../../modules/DetailProject";
 import Main from "@/main";
 
 const DetailProject = () => {

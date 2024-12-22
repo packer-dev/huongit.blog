@@ -1,5 +1,5 @@
 import React from "react";
-import ImageCustom from "./components/Image";
+import ImageCustom from "../components/Image";
 
 const NotFound = () => {
   return (

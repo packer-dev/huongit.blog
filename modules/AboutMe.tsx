@@ -3,7 +3,7 @@
 import React from "react";
 import FollowMe from "./FollowMe";
 import { CV_LINK, PAGE_PROJECT, PAGE_RESUME } from "../constants";
-import ImageCustom from "@/components/Image";
+import ImageCustom from "../components/Image";
 
 const AboutMe = () => {
   const newAvatar =
@@ -12,10 +12,10 @@ const AboutMe = () => {
     <div id="about-me" className="px-2 mx-auto lg:w-full relative about__me">
       <div className="w-1/3 bg-gray-200 md:h-full"></div>
       <div
-        className="w-full md:w-11/12 lg:w-2/3 xl:w-1/2 border-2 border-solid border-gray-200 shadow-xl rounded-lg bg-white 
-          md:absolute flex md:top-1/2 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2"
+        className="w-full md:w-11/12 lg:w-2/3 xl:w-1/2 sm:border-2 sm:border-solid sm:border-gray-200 sm:shadow-xl rounded-lg bg-white 
+          md:absolute flex flex-col sm:flex-row md:top-1/2 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2"
       >
-        <div className="w-5/12 bg-gray-100 h-full">
+        <div className="w-full pt-1 sm:pt-0 sm:w-5/12 bg-gray-100 h-full">
           <ImageCustom
             src={newAvatar}
             className="w-32 h-32 md:w-52 md:h-52 mt-8 rounded-full mx-auto"
@@ -28,7 +28,7 @@ const AboutMe = () => {
             <FollowMe />
           </div>
         </div>
-        <div className="w-7/12 px-3 box-border">
+        <div className="w-full sm:w-7/12 px-3 box-border">
           <div className="w-full flex justify-between">
             <div className="my-5">
               <p className="text-5xl md:text-8xl font-bold mb-3">Hello</p>

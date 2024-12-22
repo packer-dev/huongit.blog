@@ -1,9 +1,9 @@
 "use client";
 
-import Title from "@/components/Title";
+import Title from "../components/Title";
 import React, { useContext } from "react";
-import ItemProject from "@/components/ItemProject";
-import { AppContext } from "@/contexts/AppContext";
+import ItemProject from "../components/ItemProject";
+import { AppContext } from "../contexts/AppContext";
 
 const Projects = () => {
   const {
